@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+    <html>
+    <head>
+        <title>Orderista</title>
+               <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+<script src="/__/firebase/7.15.0/firebase-auth.js"></script>
+<script src="/__/firebase/init.js"></script>
+    
+    <body>
+       <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAcM3wkkq3YlraB5HMmVzPtafBNxcSZQoY",
+    authDomain: "miniproject-9dee1.firebaseapp.com",
+    databaseURL: "https://miniproject-9dee1.firebaseio.com",
+    projectId: "miniproject-9dee1",
+    storageBucket: "miniproject-9dee1.appspot.com",
+    messagingSenderId: "410539804770",
+    appId: "1:410539804770:web:d8af45223668059336e93b",
+    measurementId: "G-NT4LQEJF7J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  firebase.auth().signOut();
+  alert("User logged out successfully");
+  console.log("Helo");
+  window.location.href="login.html";
+  </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 May, 2020, 8:45:49 PM
+    Author     : Santosh Mokashi
+*/
+.body{
+    background-color: #FAEBD7;
+}
+
+.admin{
+    
+    font-style: italic;
+    margin: 6px;
+    
+    font-size: 18px;
+    line-height: 2.5em;
+    margin-top: 200px;
+     height : 28px; 
+}
+
+.textbox
+{
+    height: 28px;
+    font-size:20px;
+    
+}

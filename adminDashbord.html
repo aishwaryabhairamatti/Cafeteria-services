@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="admincss.css">
+         <link rel="stylesheet" type="text/css" href="menu.css">
+          <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+   
+        <script src="admindasbord.js"></script>
+    </head>
+    <body>
+        
+        <nav>
+    <ul>
+        
+         <li> <a href="home1.html"><i class="fa fa-home" ></i>Home</a></li>
+        <li> <a href="coffee.html"><i class="fa fa-coffee" ></i>Coffee</a></li>
+        <li> <a href="desserts.html"><i class="fa fa-birthday-cake" ></i>Desserts</a></li>
+        <li> <a href="brevarges.html"><i class="fa fa-glass" ></i>Beverages</a></li>
+        <li> <a href="pizza.html"><i class="fa fa-pie-chart" ></i>Pizza</a></li>
+        <li style="float: left"> <a href="allorders.html">All Orders</a></li>
+
+       
+    </ul>
+</nav>
+        <h1 align="center" style="margin-top: 100px;">Add New Items</h1>
+        <div class=" textbox" >
+           <center>
+               <b> <label for="items">Select Domain:</label></b>
+
+           <select id="items" class="admin">
+                <option id="coffee" value="coffee">Hot Coffee</option>
+                <option id="coldcoffee" value="coldcoffee">Cold Coffee</option>
+                <option id="largepizza"  value="largepizza">Large Pizza</option>
+                <option id="mediumpizza" value="mediumpizza">Medium Pizza</option>
+                <option  id="cakes"  value="cake">Cakes</option>
+                <option  id="cookies"   value="cookies">Cookies</option>
+                <option    id="beverages" value="beverages">Beverages</option>
+           </select>
+    
+    
+               <b><label>Name:</label></b>
+          <input type="text" id="name" name="Name" class="textbox"  /> 
+    
+    
+          <b><label>Price:</label></b>
+          <input type="text" id="price" name="Price" class="textbox" /> 
+          
+          <button onClick="submit('items');" id="idsubmitt">Submit</button>
+          </center>
+        </div>
+    </body>
+</html>
